@@ -75,7 +75,7 @@ if st.button("🔄 Calculate Split"):
 
         # Call Flask backend
         try:
-            res = requests.post("http://127.0.0.1:5000/api/smart-split", json=payload)
+            res = requests.post("https://splitai-hfz0.onrender.com/api/smart-split", json=payload)
             res.raise_for_status()
             result = res.json()
 
